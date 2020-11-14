@@ -1,7 +1,7 @@
 // React and CSS Imports
 import React from "react";
 import "./App.scss";
-import "globals/hack-styles.scss";
+import "./globals/hack-styles.scss";
 
 // Installed dependency imports
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
