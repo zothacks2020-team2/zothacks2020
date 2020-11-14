@@ -8,19 +8,17 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ## Starting the Backend:
 
 #### First time:
-1.) `cd backend`
-2.) `python3 -m venv env` or `py -m venv env` (Windows)
-3.) `source env/bin/activate` or `.\env\Scripts\activate`
-4.) `pip3 install -r requirements.txt`
-5.) Make a `.env` file in the directory and put this line in there: `MONGO_URI_MASTER="mongodb+srv://hacker:0oGbXnHUZ0fUCLFR@cluster0.b8pvr.mongodb.net/zothacks2020?retryWrites=true&w=majority"`
+1. `cd backend`
+2. `python3 -m venv env` or `py -m venv env` (Windows)
+3. `source env/bin/activate` or `.\env\Scripts\activate`
+4. `pip3 install -r requirements.txt`
+5. Make a `.env` file in the directory and put this line in there: `MONGO_URI_MASTER="mongodb+srv://hacker:0oGbXnHUZ0fUCLFR@cluster0.b8pvr.mongodb.net/zothacks2020?retryWrites=true&w=majority"`
 NOTE: REMOVE URI FROM README BEFORE MAKING REPO PUBLIC
-6.) `python3 app.py`
+6. `python3 app.py`
 
 #### After starting once:
-1.) `cd backend`
-2.) `python3 app.py`
-
-
+1. `cd backend`
+2. `python3 app.py`
 
 # HackUCI's Best Practices React Template
 
