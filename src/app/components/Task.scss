@@ -1,0 +1,109 @@
+@import "globals/hack-variables.scss";
+
+.task-card {
+  display: flex;
+  background-color: white;
+  color: $black;
+  width: 80vw;
+  margin-bottom: $large-spacing;
+  padding: $medium-spacing;
+  text-decoration: none;
+  transition: 0.5s all;
+  text-align: left;
+  border-radius: $small-spacing;
+  flex-direction: row;
+  align-items: flex-start;
+
+  .task-card-completed {
+    background-color: $light-gray;
+  }
+
+  .taskname-uncompleted {
+    margin: 0;
+    margin-bottom: $small-spacing;
+    text-decoration: none;
+    align-self: end;
+  }
+
+  .taskname-completed {
+    margin: 0;
+    margin-bottom: $small-spacing;
+    align-self: end;
+    text-decoration: line-through;
+    color: $dark-gray;
+  }
+
+  a {
+    align-self: flex-end;
+  }
+
+  .checkmark {
+    color:green;
+  }
+
+  .undo {
+    color: $ember-blue;
+  }
+
+  .delete {
+    color:red;
+  }
+
+}
+
+.task-card-completed {
+  display: flex;
+  background-color: $light-gray;
+  color: $black;
+  width: 80vw;
+  margin-bottom: $large-spacing;
+  padding: $medium-spacing;
+  text-decoration: none;
+  transition: 0.5s all;
+  text-align: left;
+  border-radius: $small-spacing;
+  flex-direction: row;
+  align-items: flex-start;
+  
+  .taskname-uncompleted {
+    margin: 0;
+    margin-bottom: $small-spacing;
+    text-decoration: none;
+    align-self: flex-end;
+  }
+
+  .taskname-completed {
+    margin: 0;
+    margin-bottom: $small-spacing;
+    align-self: flex-end;
+    text-decoration: line-through;
+    color: $dark-gray;
+  }
+
+  a {
+    align-self: flex-end;
+  }
+
+  .checkmark {
+    color:green;
+  }
+
+  .undo {
+    color: blue;
+    opacity: .75;
+  }
+
+  .delete {
+    color:red;
+    opacity: 0.75;
+  }
+
+}
+
+.task-card:hover {
+  box-shadow: $large-shadow;
+}
+
+.task-card-completed:hover {
+  box-shadow: $large-shadow;
+}
