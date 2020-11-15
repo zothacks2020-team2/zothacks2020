@@ -1,38 +1,37 @@
 @import "globals/hack-variables.scss";
 
 .task-card {
-  display: flex;
+  display: grid;
   background-color: white;
   color: $black;
   width: 80vw;
   margin-bottom: $large-spacing;
   padding: $medium-spacing;
-  text-decoration: none;
   transition: 0.5s all;
   text-align: left;
   border-radius: $small-spacing;
-  flex-direction: row;
-  align-items: flex-start;
-
-  .task-card-completed {
-    background-color: $light-gray;
-  }
+  grid-template-columns: 1fr 90px 90px;
+  column-gap: 20px;
 
   .taskname-uncompleted {
     margin: 0;
     margin-bottom: $small-spacing;
     text-decoration: none;
-    align-self: end;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .taskname-completed {
     margin: 0;
     margin-bottom: $small-spacing;
-    align-self: end;
     text-decoration: line-through;
     color: $dark-gray;
   }
-
+  
   a {
     align-self: flex-end;
   }
@@ -52,36 +51,29 @@
 }
 
 .task-card-completed {
-  display: flex;
+  display: grid;
   background-color: $light-gray;
   color: $black;
   width: 80vw;
   margin-bottom: $large-spacing;
   padding: $medium-spacing;
-  text-decoration: none;
   transition: 0.5s all;
   text-align: left;
   border-radius: $small-spacing;
-  flex-direction: row;
-  align-items: flex-start;
-  
-  .taskname-uncompleted {
-    margin: 0;
-    margin-bottom: $small-spacing;
-    text-decoration: none;
-    align-self: flex-end;
-  }
+  grid-template-columns: 1fr 90px 90px;
+  column-gap: 20px;
 
   .taskname-completed {
     margin: 0;
     margin-bottom: $small-spacing;
-    align-self: flex-end;
     text-decoration: line-through;
     color: $dark-gray;
-  }
-
-  a {
-    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .checkmark {
