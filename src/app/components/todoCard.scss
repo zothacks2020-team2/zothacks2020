@@ -1,0 +1,27 @@
+@import "globals/hack-variables.scss";
+
+
+.todo-card {
+    background-color: white;
+    // box-shadow
+    color: $black;
+    width: 40rem;
+    border-radius: 10px;  //100px is a pill shape
+    // margin-bottom: $large-spacing;
+    // padding: 20px;
+    // padding: 20px 40px;
+    // padding-top: 20px;
+    // padding-bottom: 20px;
+    // padding: 20px 20px 20px 20px;
+    margin: $medium-spacing auto;
+    padding: $medium-spacing;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 500ms;
+    // keyframes
+    // https://www.gradient-animator.com/
+}
+.todo-card:hover{
+    background-color: $ember-orange-ish;
+    box-shadow: $large-shadow;
+}
