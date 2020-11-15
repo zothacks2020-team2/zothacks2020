@@ -25,3 +25,11 @@
     background-color: $ember-orange-ish;
     box-shadow: $large-shadow;
 }
+
+.todo-completed{
+    text-decoration: line-through;
+}
+
+.suggested {
+    color: black;
+}

@@ -11,7 +11,7 @@ function NameCard(props) {
                     about
                 </NavLink>
         </div>
-        <h1 className="projectName">
+        <h1 className="title">
             Team Two
         </h1>
     </div>

@@ -7,26 +7,14 @@ import "./globals/hack-styles.scss";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 
 // Website imports for classes you made
-import { Card } from "./app/containers";
 import { HomePage } from "./app/views";
+import { AboutPage } from "./app/views";
+import { RecommendPage } from "./app/views";
 
-
-function OtherCard() {
-  return (
-    <Card style={{ width: "30vw"}}>
-      <h1>
-        Other Page!
-      </h1>
-      <p>
-        Howdy
-      </p>
-    </Card>
-  );
-}
 
 function App() {
   return (
-    <div className="app flex-col fill-view">
+    <div className="app flex-col">
       <Router>
         <Switch>
           <Route 
@@ -35,7 +23,11 @@ function App() {
           />
           <Route 
             exact path={"/about"}
-            component={OtherCard}
+            component={AboutPage}
+          />
+          <Route 
+            exact path={"/recommend"}
+            component={RecommendPage}
           />
         </Switch>
       </Router>

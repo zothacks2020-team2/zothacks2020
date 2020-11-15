@@ -1,7 +1,8 @@
 @import "globals/hack-variables.scss";
 
 .card {
-  background-color: burlywood;
+  background-color: #3a4665;
+  color: white;
   
   & > div {
     margin: $medium-spacing;
