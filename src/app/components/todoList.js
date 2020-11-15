@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./todoList.scss";
 
 // import axios from "axios"
@@ -28,7 +28,8 @@ function TodoList() {
     function addTodo(){
         setListOfTodos([...listOfTodos, {task: 'Go play tennis', completed: false}]);
     }
-    function toggleTodo(index){
+  
+    function toggleTodo(index) {
         let newListOfTodos = listOfTodos;
         newListOfTodos[index].completed = !newListOfTodos[index].completed;
         setListOfTodos([...newListOfTodos]);
@@ -41,9 +42,9 @@ function TodoList() {
                 return (<TodoCard todoStr={todoStr}/>);
             })} */}
             {listOfTodos.map((singularTodo, index) => {
-                return (<TodoCard data={singularTodo} toggleData={() => {toggleTodo(index)}}/>);
+                return (<TodoCard data={singularTodo} toggleData={() => { toggleTodo(index) }} />);
             })}
-            <button onClick={addTodo} style={{height: '100px', width: '100px', borderRadius: '50%', backgroundImage: "url('https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')", backgroundSize: 'cover'}}>
+            <button onClick={addTodo} style={{ height: '100px', width: '100px', borderRadius: '50%', backgroundImage: "url('https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')", backgroundSize: 'cover' }}>
             </button>
         </div>
     );

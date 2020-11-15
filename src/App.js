@@ -7,6 +7,7 @@ import "./globals/hack-styles.scss";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 
 // Website imports for classes you made
+
 import { HomePage } from "./app/views";
 import { AboutPage } from "./app/views";
 import { RecommendPage } from "./app/views";

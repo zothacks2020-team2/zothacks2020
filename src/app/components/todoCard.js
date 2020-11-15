@@ -5,7 +5,7 @@ import {NavLink} from "react-router-dom";
 
 //import { Link } from "react-router-dom";
 
-function TodoCard({data, toggleData}){
+function TodoCard({ data, toggleData }) {
     // const [completed, setCompleted] = useState(false);
     //  // let completed = true;
     // useEffect(function(){
@@ -21,9 +21,7 @@ function TodoCard({data, toggleData}){
     // }, [completed]);
 
 
-    return (
-        //<Link to={/}></Link>
-        
+    return ( 
         <div className="todo-card flex-col" onClick={toggleData}>
             <h1 className= {data.completed ? "todo-completed" : ""}>{data.task}</h1>
             <div>
@@ -32,6 +30,9 @@ function TodoCard({data, toggleData}){
                 </NavLink>
             </div>
             {/* {{data.completed ? "yes" : "no"}} */}
+        <div className="todo-card" onClick={toggleData}>
+            <h1>{data.task}</h1>
+            {data.completed ? "yes" : "no"}
         </div>
     );
 }
