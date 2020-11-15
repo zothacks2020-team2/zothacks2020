@@ -12,7 +12,7 @@ function NameCard(props) {
                 </NavLink>
         </div>
         <h1 className="projectName">
-            Team Two
+            Tune-do
         </h1>
     </div>
   );
