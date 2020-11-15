@@ -1,11 +1,12 @@
 import os
 import util
 import db
-from flask import Flask, json
+from flask import Flask, json, request
 from flask_cors import CORS
 from flask_restful import Api
 from dotenv import load_dotenv
 from resources.user import User
+from spotifydatafetcher import SpotifyDataFetcher
 
 # Load Environment variables
 load_dotenv()
@@ -28,6 +29,12 @@ api.add_resource(User, "/user")
 def index():
     return "Welcome to our ZotHacks 2020 project!"
 
+# Route to get song recommendations. Expects ?task=[task] in params
+@app.route("/recommendations", methods=["GET"])
+def recommendations():
+    print(request.args.get('task'))
+    recommendations = SpotifyDataFetcher().get_song_recommendations(request.args.get('task'))
+    return json.jsonify(recommendations)
 
 # Handles validation errors and returns JSON Object
 @app.errorhandler(422)
