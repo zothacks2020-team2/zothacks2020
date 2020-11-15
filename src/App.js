@@ -11,35 +11,6 @@ import { Card } from "./app/containers";
 import { HomePage } from "./app/views";
 
 
-/*
-function SampleCard() {
-  return (
-    <Card style={{ width: "60vw", color: "green"}}>
-      <h1>
-        This is a test!
-      </h1>
-      <h2>
-        This is also a test?
-      </h2>
-      <h3>
-        abcdefghijklmnop
-      </h3>
-      <h4>Featuring our friends:</h4>
-      <p>
-        Create React App
-      </p>
-      <p>
-        SASS
-      </p>
-      <p>
-        React Router
-      </p>
-    </Card>
-  );
-}
-*/
-
-
 function OtherCard() {
   return (
     <Card style={{ width: "30vw"}}>
@@ -55,7 +26,7 @@ function OtherCard() {
 
 function App() {
   return (
-    <div className="app flex-center fill-view">
+    <div className="app flex-col fill-view">
       <Router>
         <Switch>
           <Route 
@@ -63,7 +34,7 @@ function App() {
             component={HomePage}
           />
           <Route 
-            exact path={"/other"}
+            exact path={"/about"}
             component={OtherCard}
           />
         </Switch>

@@ -3,11 +3,20 @@
 .app {
   text-align: center;
   background-image: linear-gradient(to right, $roseanne-left, $roseanne-right);
+  min-height: 100%;
+  overflow-y: auto;
   //background-color: $dark-gray;
 }
 
+button {
+  border: none;
+}
 
 h1 {
   color: rgb(143, 140, 140)
 }
 
+a {
+  text-decoration: none;
+  color: red;
+}

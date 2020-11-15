@@ -1,0 +1,31 @@
+@import "globals/hack-variables.scss";
+
+.nameCard {
+    height: 10vh;
+    width: 100vw;
+    color: white;
+    text-align: center;
+    background-color: #3a4665; //or black
+    font: Courier-New
+    
+}
+
+.projectName {
+    color: white;
+    vertical-align: top;
+    font: Georgia;
+    font-size: 40px;
+}
+
+.navigation {
+    position: absolute;
+    left: 0;
+}
+
+.navItem{
+    color: white;
+    margin-top: 30px;
+    margin-left: 30px;
+    font: Georgia;
+    font-size: 20px;
+}
