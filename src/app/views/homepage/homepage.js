@@ -6,8 +6,8 @@ import NameCard from "../../components/nameCard"
 function Homepage(props) {
   return (
     <>
-        <NameCard></NameCard>
-        <TodoList></TodoList>
+      <NameCard />
+      <TodoList />
     </>
   );
 }
