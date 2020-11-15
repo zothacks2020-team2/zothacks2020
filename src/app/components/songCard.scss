@@ -1,0 +1,17 @@
+@import "globals/hack-variables.scss";
+
+.song-card{
+    background-color: white;
+    margin: $medium-spacing auto;
+    padding: 10%;
+    border-radius: 30px;
+}
+
+.song-card:hover{
+    background-color: $ember-orange-ish;
+    box-shadow: $large-shadow;
+}
+
+.album-cover{
+    text-decoration: none;
+}
