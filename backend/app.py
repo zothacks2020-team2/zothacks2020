@@ -5,6 +5,7 @@ from flask import Flask, json
 from flask_cors import CORS
 from flask_restful import Api
 from dotenv import load_dotenv
+from resources.user import User
 
 # Load Environment variables
 load_dotenv()
@@ -20,6 +21,7 @@ app.json_encoder = util.MongoEncoder
 db.mongo.init_app(app)
 api = Api(app)
 
+api.add_resource(User, "/user")
 
 # Vanilla Flask route
 @app.route("/", methods=["GET"])
