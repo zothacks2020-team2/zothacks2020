@@ -37,10 +37,6 @@ function TodoList() {
 
     return (
         <div className="todo-list">
-            {/* {(todoItems || []).map(function (todoStr){
-                console.log(todoStr);
-                return (<TodoCard todoStr={todoStr}/>);
-            })} */}
             {listOfTodos.map((singularTodo, index) => {
                 return (<TodoCard data={singularTodo} toggleData={() => { toggleTodo(index) }} />);
             })}
