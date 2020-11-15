@@ -31,6 +31,7 @@ function Task(props) {
                 {completed ?
                     <h1 className="taskname-completed">props.taskname</h1> : <h1 className="taskname-uncompleted">props.taskname</h1>
                 }
+
                 {completed ?
                     <a href="your link here" onClick={handleCompleted}><i class="fas fa-undo fa-4x undo"></i></a> :
                     <a href="your link here" onClick={handleCompleted}><i class="fas fa-check fa-4x checkmark"></i></a>
