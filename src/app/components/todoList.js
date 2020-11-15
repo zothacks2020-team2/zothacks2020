@@ -15,12 +15,20 @@ function TodoList() {
             completed: false,
         },
         {
-            task: 'Prepare Dinner',
+            task: 'Prepare dinner',
             completed: false,
         },
         {
-            task: 'Date Night',
+            task: 'Date night',
             completed: false,
+        },
+        {
+            task: 'Buy K-pop concert tickets',
+            complete: false,
+        },
+        {
+            task: 'Fake wires in electrical',
+            complete: false,
         }
     ]);
     // user package is called sweetalert2
