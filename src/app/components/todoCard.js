@@ -4,7 +4,7 @@ import React from "react";
 
 //import { Link } from "react-router-dom";
 
-function TodoCard({data, toggleData}){
+function TodoCard({ data, toggleData }) {
     // const [completed, setCompleted] = useState(false);
     //  // let completed = true;
     // useEffect(function(){
@@ -21,7 +21,6 @@ function TodoCard({data, toggleData}){
 
 
     return (
-        //<Link to={/}></Link>
         <div className="todo-card" onClick={toggleData}>
             <h1>{data.task}</h1>
             {data.completed ? "yes" : "no"}
