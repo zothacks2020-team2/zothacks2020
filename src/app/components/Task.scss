@@ -1,0 +1,97 @@
+@import "globals/hack-variables.scss";
+
+.task-card {
+  display: grid;
+  background-color: white;
+  color: $black;
+  width: 80vw;
+  margin-bottom: $large-spacing;
+  padding: $medium-spacing;
+  transition: 0.5s all;
+  text-align: left;
+  border-radius: $small-spacing;
+  grid-template-columns: 1fr 90px 90px;
+  column-gap: 20px;
+
+  .taskname-uncompleted {
+    margin: 0;
+    margin-bottom: $small-spacing;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .taskname-completed {
+    margin: 0;
+    margin-bottom: $small-spacing;
+    text-decoration: line-through;
+    color: $dark-gray;
+  }
+
+  .checkmark {
+    color:green;
+  }
+
+  .undo {
+    color: $ember-blue;
+  }
+
+  .delete {
+    color:red;
+  }
+
+}
+
+.task-card-completed {
+  display: grid;
+  background-color: $light-gray;
+  color: $black;
+  width: 80vw;
+  margin-bottom: $large-spacing;
+  padding: $medium-spacing;
+  transition: 0.5s all;
+  text-align: left;
+  border-radius: $small-spacing;
+  grid-template-columns: 1fr 90px 90px;
+  column-gap: 20px;
+
+  .taskname-completed {
+    margin: 0;
+    margin-bottom: $small-spacing;
+    text-decoration: line-through;
+    color: $dark-gray;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .checkmark {
+    color:green;
+  }
+
+  .undo {
+    color: blue;
+    opacity: .75;
+  }
+
+  .delete {
+    color:red;
+    opacity: 0.75;
+  }
+
+}
+
+.task-card:hover {
+  box-shadow: $large-shadow;
+}
+
+.task-card-completed:hover {
+  box-shadow: $large-shadow;
+}
