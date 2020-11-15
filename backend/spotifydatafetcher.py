@@ -42,7 +42,7 @@ class SpotifyDataFetcher():
         #     print(playlist['name'])
         self.playlist_id = random.sample(playlists, 1)[0]['id']
 
-    def __select_playlist_tracks(self) -> list['str']:
+    def __select_playlist_tracks(self) -> list:
         playlist_tracks = self.spclient.playlist_items(
             self.playlist_id, limit=100)['items']
         # print(self.spclient.playlist_items(self.playlist_id, limit=100))
