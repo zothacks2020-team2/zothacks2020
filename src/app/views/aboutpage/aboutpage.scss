@@ -6,8 +6,7 @@
     color: white;
     text-align: center;
     background-color: #3a4665; //or black
-    font: Courier-New
-    
+    font: Courier-New;
 }
 
 .title {
@@ -33,4 +32,16 @@
 
 .subTitle {
     color: white;
+}
+
+.textbox {
+    height: auto;
+    width: 50%;
+    background-color: white;
+    border-radius: $small-spacing;
+    left: 50%;
+    top: 50%;
+    transform: translate(50%, 50%);
+    font: Courier-New;
+
 }
